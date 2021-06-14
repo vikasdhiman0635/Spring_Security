@@ -57,7 +57,7 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter
     {
         UserDetails vikasUser=User.builder()
                     .username("USER_1")
-                .password(passwordEncoder.encode("123"))
+                .password(passwordEncoder.encode("PASSWORD_1"))
 //                .roles(STUDENT.name())
                 .authorities(STUDENT.getgrantedAuthority())
                 .build();
