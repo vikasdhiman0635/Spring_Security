@@ -70,7 +70,7 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter
                 .build();
 
         UserDetails jyotiUSER=User.builder()
-                .username("jyoti")
+                .username("USER_3")
                 .password(passwordEncoder.encode("123"))
 //                .roles(ADMINTRAINEE.name())
                 .authorities(ADMINTRAINEE.getgrantedAuthority())
