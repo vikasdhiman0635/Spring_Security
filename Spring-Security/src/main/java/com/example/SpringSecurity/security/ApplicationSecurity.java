@@ -56,7 +56,7 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter
     protected UserDetailsService userDetailsService()
     {
         UserDetails vikasUser=User.builder()
-                .username("vikas")
+                    .username("USER_1")
                 .password(passwordEncoder.encode("123"))
 //                .roles(STUDENT.name())
                 .authorities(STUDENT.getgrantedAuthority())
